@@ -1,0 +1,33 @@
+nav{
+  position: fixed;
+  top: 15px;
+  z-index: 20;
+  background-color: transparent;
+  left: 50%;
+  transform: translateX(-50%);
+  li{
+    display: inline-block;
+    margin-right: 8px;
+    background-color: rgba(0,0,0,0.8);
+    padding: 10px 15px;
+    border-radius: 8px;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+
+  }
+  .active{
+    background-color: rgba(251, 253, 252, 0.8);
+    a{
+      color: black;
+    }
+  }
+}
+
+#start{
+  background-image: url("../img/main.jpg");
+  background-size: cover;
+  filter: sepia(80%) contrast(80%) brightness(130%);
+}
