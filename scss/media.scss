@@ -1,0 +1,35 @@
+@mixin about($width, $margin-bottom, $column-count, $font-size, $line-height, $image-width){
+  #about-me{
+    width: $width;
+    margin: 0 auto;
+    margin-bottom: $margin-bottom;
+    p{
+      text-align: justify;;
+      column-count: $column-count;
+      column-gap: 16px;
+      font-size: $font-size;
+      line-height: $line-height;
+    }
+  }
+  img{
+    display: block;
+    margin: 0 auto;
+    width: $image-width;
+    height: auto;
+  }
+}
+
+
+
+
+@media (max-width: 800px) {
+  #about{
+    @include about(93%, 3%, 1, 14px, 1.2em, 90%);
+  }
+
+}
+@media (min-width: 801px) {
+  #about{
+  @include about(80%, 2%, 2, 18px, 1.3em, 30%);
+  }
+}
