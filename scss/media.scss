@@ -1,12 +1,15 @@
-@mixin about($width, $margin-bottom, $column-count, $font-size, $line-height, $image-width){
+@mixin centered($width){
+  width: $width;
+  margin: 0 auto;
+}
+
+@mixin about($margin-bottom, $column-count, $font-size, $line-height, $image-width){
   #about-me{
-    width: $width;
-    margin: 0 auto;
     margin-bottom: $margin-bottom;
     p{
       text-align: justify;;
       column-count: $column-count;
-      column-gap: 16px;
+      column-gap: 20px;
       font-size: $font-size;
       line-height: $line-height;
     }
@@ -23,13 +26,35 @@
 
 
 @media (max-width: 800px) {
+  .center-container{
+    @include centered(95%);
+  }
   #about{
-    @include about(93%, 3%, 1, 14px, 1.2em, 90%);
+    @include about(3%, 1, 14px, 1.2em, 65%);
+  }
+  .image{
+    width: 130px;
+    height: 70px;
+  }
+  img{
+    height: 95px;
   }
 
 }
 @media (min-width: 801px) {
+  .center-container{
+    @include centered(80%);
+  }
   #about{
-  @include about(80%, 2%, 2, 18px, 1.3em, 30%);
+  @include about(3%, 2, 17px, 1.3em, 30%);
+  }
+  #gallery{
+    .image{
+      width: 230px;
+      height: 170px;
+    }
+    img{
+      height: 190px;
+    }
   }
 }
