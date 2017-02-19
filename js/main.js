@@ -8,3 +8,7 @@ $('#fullpage').fullpage({
       $('#menu li').eq(index-1).addClass("active");
     }
 });
+
+$("#hamburger-menu").click(function(){
+  $("#rwd-menu").toggleClass("active-rwd");
+});

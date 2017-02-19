@@ -12,25 +12,61 @@ nav{
   background-color: transparent;
   left: 50%;
   transform: translateX(-50%);
-  li{
-    display: inline-block;
-    margin-right: 8px;
-    background-color: rgba(0,0,0,0.8);
-    padding: 10px 15px;
-    border-radius: 8px;
-  }
-  a{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-
-  }
-  .active{
-    background-color: rgba(251, 253, 252, 0.8);
+  #menu{
+    li{
+      display: inline-block;
+      margin-right: 8px;
+      background-color: rgba(0,0,0,0.8);
+      padding: 10px 15px;
+      border-radius: 8px;
+    }
     a{
-      color: black;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+
+    }
+    .active{
+      background-color: rgba(251, 253, 252, 0.8);
+      a{
+        color: black;
+      }
+  }
+  }
+  #hamburger-menu{
+    cursor: pointer;
+    left: 15px;
+    #hamburger-menu-icon{
+      .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+      }
+    }
+    #rwd-menu{
+      &:not(.active-rwd){
+        visibility: hidden;
+      }
+      .active-rwd{
+        background-color: red;
+      }
+      li{
+        padding: 15px 20px;
+        border: 1px solid #000;
+        background-color: #424240;
+        text-align: center;
+        &:hover{
+          background-color: #6d6f6f;
+        }
+        a{
+          color: #FFF;
+          text-decoration: none;
+        }
+      }
     }
   }
+
 }
 .header{
   font-family: 'Francois One', sans-serif;

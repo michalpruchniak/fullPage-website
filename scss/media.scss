@@ -27,6 +27,9 @@
 
 
 @media (max-width: 800px) {
+  #menu{
+    display: none;
+  }
   .center-container{
     @include centered(95%);
   }
@@ -52,9 +55,12 @@
         margin-top: 30px;
       }
     }
-}
+  }
 }
 @media (min-width: 801px) {
+  #hamburger-menu{
+    display: none;
+  }
   .center-container{
     @include centered(80%);
   }
