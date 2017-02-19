@@ -1,0 +1,30 @@
+input[type="text"], input[type="submit"], textarea{
+  background-color: transparent;
+  border: 2px solid #51807c;
+  border-radius: 6px;
+  padding: 6px;
+  outline-color: transparent;
+  &::-webkit-input-placeholder { /* Chrome */
+  color: #2f5754;
+  font-weight: bold;
+  }
+  &:-ms-input-placeholder {
+    color: #2f5754;
+    font-weight: bold;
+  }
+  &::-moz-placeholder {
+    color: #2f5754;
+    font-weight: bold;
+  }
+  &:-moz-placeholder {
+    color: #2f5754;
+    font-weight: bold;
+  }
+
+  &:hover, &:focus{
+    background-color: #72b1ac;
+  }
+}
+input[type="submit"]{
+  cursor: pointer;
+}
