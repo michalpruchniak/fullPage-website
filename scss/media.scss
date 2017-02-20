@@ -33,8 +33,11 @@
   .center-container{
     @include centered(95%);
   }
+  #start{
+    background-position: 60%;
+  }
   #about{
-    @include about(3%, 1, 14px, 1.2em, 65%);
+    @include about(3%, 1, 13px, 1.2em, 60%);
   }
   .image{
     width: 130px;

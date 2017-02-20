@@ -9,6 +9,10 @@ $('#fullpage').fullpage({
     }
 });
 
-$("#hamburger-menu").click(function(){
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+$(".hamburger-menu-icon").click(function(){
+  $(this).toggleClass("change");
   $("#rwd-menu").toggleClass("active-rwd");
 });
